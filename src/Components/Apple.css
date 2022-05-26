@@ -1,0 +1,1125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0.5%;
+	height: 50px;
+	background-color: #090809;
+}
+#cart-icon{
+    position: absolute;
+    top: 20px;
+    margin-left:-700px;
+    visibility: visible;
+   }
+   #cart-icon1{
+    position: absolute;
+    top: 20px;
+    margin-left: 600px;
+    visibility: visible;
+
+   }
+   #cart-icon2{
+    position: absolute;
+    top: 20px;
+    margin-left: 700px;
+    visibility: visible;
+
+   }
+/* na
+v .links {
+	float: left;
+	padding: 0;
+	margin: 0;
+	width: 70%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+    text-align: center;
+	align-items: center;
+}
+nav .links li {
+	list-style: none;
+}
+nav .links a {
+    margin-left: 75px;
+	display: block;
+	font-size: 12px;
+	color: rgb(215, 211, 211);
+	text-decoration: none;
+} */
+nav .links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70%;
+	height: 100%;
+    margin-left: 180px;
+    padding: 0;
+    margin-top: 15px;
+  
+}
+nav .links li {
+	list-style: none;
+}
+nav .links a {
+	display: block;
+	font-size: 14px;
+	color: rgb(229, 225, 225);
+	text-decoration: none;
+}
+#nav-toggle {
+    position: absolute;
+    top: -100px;
+}
+
+nav .icon-burger {
+    display: none;
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav .icon-burger .line {
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all .3s ease-in-out;
+}
+.search,.applogo,.cart{
+    color:white;
+    margin-left:10px;
+    width:30px;
+    height:30px;
+    margin-top: -12px;
+}
+.header{
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    top:60px;
+    background-color: rgb(206, 208, 210);
+}
+.header h4{
+    font-size: 16px;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+.banner{
+    width:100%;
+    height:810px;
+    background-color: rgba(252, 251, 251, 0.942);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.banner h1{
+    margin-top: 180px;
+    font-size: 45px;
+}
+.banner h4{
+    margin-top: 10px;
+}
+.banner h5{
+    color: rgb(74, 74, 245);
+    font-weight: 12px;
+    margin-top: 10px;
+}
+.banner img{
+    margin-top: 10px;
+    width:400px;
+    height:500px;
+}
+.banner1{
+    margin-top: 20px;
+    width:100%;
+    height:500px;
+    background-color: rgba(252, 251, 251, 0.942);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.banner1 h3{
+    margin-top: 25px;
+}
+.banner1 h4{
+    margin-top: 10px;
+}
+.banner1 h5{
+    margin-top: 15px;
+    color: rgb(74, 74, 245);
+}
+.banner1 img{
+    margin-top: 5px;
+    width:700px;
+    height:300px;
+    margin-left: 500px;
+}
+.banner2{
+    width:100%;
+    height:600px;
+    background-color: rgba(252, 251, 251, 0.942);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.banner2 h1{
+    margin-top: 20px;
+}
+.banner2 h3{
+    color: red;
+    margin-top: 25px;
+}
+.banner2 h4{
+    margin-top: 10px;
+}
+.banner2 h5{
+    margin-top: 15px;
+    color: rgb(74, 74, 245);
+}
+.banner2 img{
+    margin-top: 10px;
+    width:400px;
+    height:400px;
+}
+.rowposter{
+    display: flex;
+    flex-direction: row;
+}
+.rowposter .left{
+    width:50%;
+    height:600px; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #090809;
+}
+.left img{
+    margin-top: 10px;
+    width:700px;
+    height:400px;
+}
+.left h1{
+    color: white;
+    font-size: 34px;
+}
+.left h3{
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+}
+.left h5{
+    color: rgb(74, 74, 245);
+    margin-top: 5px;
+}
+.rowposter .right{
+    width:50%;
+    height:600px; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #090809;
+    margin-right: 20px;
+    background-image: url("https://thumbs.dreamstime.com/b/zaporizhia-ukraine-december-studio-portrait-beautiful-young-girl-holding-iphone-near-her-lips-apple-product-promotional-169923813.jpg");
+    background-size: cover; 
+}
+.rowposter .right h1{
+    margin-top: 30px;
+    color: white;
+    font-size: 36px;
+}
+.rowposter .right h5{
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+}
+.rowposter1{
+    display: flex;
+    flex-direction: row;
+}
+.rowposter1 .left1{
+    width:50%;
+    height:600px; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #090809;
+}
+.left1 h1{
+    color: white;
+    font-size: 34px;
+    margin-top: 40px;
+}
+.left1 h3{
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+.left1 h5{
+    color: rgb(74, 74, 245);
+    margin-top: 5px;
+}
+.left1 img{
+    margin-top: 40px;
+    width:400px;
+    height:400px;
+}
+.rowposter1 .right1{
+    width:50%;
+    height:600px; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgba(252, 251, 251, 0.942); 
+}
+.right1 h1{
+    font-size: 44px;
+    margin-top: 40px;
+}
+.right1 h3{
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+.right1 h5{
+    color: rgb(74, 74, 245);
+    margin-top: 8px;
+}
+.right1 img{
+    margin-top: 40px;
+    width:800px;
+    height:400px;
+}
+.rowposter2{
+    display: flex;
+    flex-direction: row;
+}
+.rowposter2 .left2{
+    width:50%;
+    height:600px; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: rgba(252, 251, 251, 0.942); 
+}
+.left2 h2{
+margin-top: 30px;
+color: orangered;
+}
+.left2 h1{
+    font-size: 34px;
+    margin-top: 5px;
+}
+.left2 h3{
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+.left2 h5{
+    color: rgb(74, 74, 245);
+    margin-top: 5px;
+}
+.left2 img{
+    margin-top: 40px;
+    width:500px;
+    height:300px;
+}
+.rowposter2 .right2{
+    width:50%;
+    height:600px; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: white;
+    margin-right: 20px;
+    background-image: url("https://www.apple.com/tv-pr/articles/2022/04/apple-tv-debuts-trailer-for-new-documentary-series-make-or-break-following-the-worlds-best-surfers-premiering-friday-april-29/images/all-news-images/ATV_Make_or_Break_key_art_16x9_news_16_9_regular.jpg.latest_news_large_2x.jpg");
+    background-size: cover; 
+}
+.right2 h5{
+    margin-top: 120px;
+    color: white;
+    margin-left: 90px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    /* text-align: center;
+    align-items: center; */
+    margin-top: 20px;
+    height:600px;
+    background-color: rgba(252, 251, 251, 0.942); 
+    
+}
+.footer h6{
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.6rem;
+}
+.footer hr{
+    margin-top: 15px;
+    width:75%;
+    text-align:left;
+    margin-left:220px;
+    margin-right:20px;
+}
+.points{
+    display: flex;
+    flex-direction: row;
+}
+.points .shop {
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+    margin-top: 15px;
+    text-align: justify;
+    
+}
+.points .shop h5{
+    margin-top: 10px;
+    font-weight: normal;
+    line-height: 1.4rem;
+}
+.points .services{
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-top: 15px;
+    text-align: justify;
+}
+.points .services h5{
+    margin-top: 10px;
+    font-weight: normal;
+    line-height: 1.4rem;
+}
+.points .services .account{
+    margin-top: 15px;
+}
+.points .store{
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-top: 15px;
+    text-align: justify;
+}
+.points .store h5{
+    margin-top: 10px;
+    font-weight: normal;
+    line-height: 1.4rem;
+}
+.points .buisness{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 5px;
+    text-align: justify;
+}
+.points .buisness h4{
+    margin-top: 10px;
+}
+.points .buisness h5{
+    margin-top: 10px;
+    font-weight: normal;
+    line-height: 1.4rem;
+}
+.points .values{
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-top: 5px;
+    text-align: justify;
+}
+.points .values h4{
+    margin-top: 10px;
+}
+.points .values h5{
+    margin-top: 10px;
+    font-weight: normal;
+    line-height: 1.4rem;
+}
+.footer .contact h4{
+    /* margin-left: 10px; */
+    margin-right:750px;
+    font-weight: normal;
+    margin-top: 15px;
+}
+.content div {
+    display: flex;
+    flex-direction: row;
+}
+.content div h4{
+    margin-left: 250px;
+    margin-top: 10px;
+    font-weight: normal;
+}
+.content div .p{
+    margin-left: 250px;
+    margin-top: 10px;
+    font-weight: normal;
+}
+.content .t{
+    margin-left: 30px;
+    margin-top: 10px;
+    font-weight: normal;
+}
+.content .s,.si,.l{
+    margin-left: 30px;
+    margin-top: 10px;
+    font-weight: normal;
+}
+.content .india{
+    margin-left: 250px;
+    margin-top: 10px;
+    font-weight: normal;
+}
+.content .vl {
+    margin-top: 10px;
+    margin-left: 15px;
+    border-left: 2px solid rgb(61, 60, 60);
+    height: 20px;
+  }
+
+  @media (max-width: 1441px) { 
+      nav{
+          width: 1440px;
+      }
+      #cart-icon{
+          margin-left: -600px;
+      }
+      #cart-icon1{
+        margin-left: 500px;
+    }
+    #cart-icon2{
+        margin-left: 600px;
+    }
+    .header{
+        width: 1440px;
+    }
+    .banner {
+        width: 1440px;
+    }
+    .banner1 {
+        width: 1440px;
+    }
+    .banner2 {
+        width: 1440px;
+    }
+    .rowposter1 .left1{
+        width: 48.5%;
+    }
+    .rowposter1 .right1{
+        margin-right: 10px;
+        width:680px;
+    }
+    .rowposter1 .right1 img{
+      width:600px;
+    }
+    .rowposter2 .left2{
+        width: 57%;
+    }
+    .rowposter2 .right2{
+        width: 56%;
+        margin-left: 20px;
+    }
+    .points .shop {
+        margin-left: 260px;
+    }
+    .footer .contact h4{
+        margin-left: 150px;
+        margin-right: 600px;
+    }
+    .content h4{
+        margin-left: 250px;
+    }
+    .content .india{
+        margin-left:95px;
+    }
+  }
+  @media (max-width: 1025px) { 
+    nav{
+        width: 1044px;
+    }
+  .header{
+      width: 1044px;
+  }
+  .banner {
+      width: 1044px;
+  }
+  .banner1 {
+      width: 1044px;
+  }
+  .banner2 {
+      width: 1044px;
+  }
+  .banner1 img{
+      margin-left: 150px;
+  }
+  .left img{
+      width: 400px;
+  }
+  .rowposter .right {
+      margin-right: -1px;
+  }
+
+  .rowposter1 .right1{
+      width: 500px;
+      margin-left: 8px;
+      margin-right: 2px;
+  }
+  .rowposter1 .right1 img{
+      width: 500px;
+  }
+  .footer h6{
+      margin-left: 50px;
+      margin-right: 50px;
+  }
+  .footer hr{
+      margin-left: 50px;
+      width: 920px;
+  }
+  .points .shop{
+      margin-left: 90px;
+  }
+  .points .services{
+      margin-left: 60px;
+  }
+  .points .store{
+      margin-left: 20px;
+  }
+  .points .buisness{
+      margin-left: 60px;
+  }
+  .points .values{
+      margin-left: 60px;
+  }
+ .footer .contact h4{
+margin-left: 50px;
+margin-right: 400px;
+ }
+ .content div h4{
+     margin-left: 90px;
+ }
+ .content div .p{
+     margin-left: 90px;
+ }
+ .content .india{
+     margin-left: 30px;
+ }
+ nav .links{
+     margin-left: 50px;
+ }
+a{ 
+     padding: 0px 8px;
+     width: 50px;
+  }
+.support{
+      margin-left: 30px;
+   }
+#cart-icon{
+    font-size: 35px;
+    top: 10px;
+    margin-left: -500px;
+    visibility: visible;
+   }
+   #cart-icon1{
+    font-size: 35px;
+    top: 10px;
+    margin-left: 300px;
+    visibility: visible;
+   }
+   #cart-icon2{
+    font-size: 35px;
+    top: 10px;
+    margin-left: 400px;
+    visibility: visible;
+   }
+}
+@media (max-width: 770px) { 
+    nav{
+        width: 768px;
+    } 
+    #cart-icon{
+        font-size: 35px;
+        top: 10px;
+        margin-left: -20px;
+       }
+       #cart-icon2{
+        font-size: 35px;
+        top: 10px;
+        margin-left: 300px;
+       }
+       #cart-icon1{
+           visibility: hidden;
+       }
+    nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0,0,0,.8);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+    .applogo{
+        visibility: hidden;
+    }
+.cart,.search{
+        visibility: hidden;
+    }
+	nav .links a {
+		font-size: 20px;
+        margin-left: 5px;
+        text-align: justify;
+        width: auto;
+	}
+    nav :checked~.links {
+        bottom: 0;
+    }
+
+    nav .icon-burger {
+        display: block;
+    }
+
+    nav :checked~.icon-burger .line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+    }
+
+    nav :checked~.icon-burger .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
+    }
+
+    nav :checked~.icon-burger .line:nth-child(2) {
+        opacity: 0;
+    }
+  .header{
+      width: 768px;
+      top:50px
+  }
+  .banner {
+      width: 768px;
+  }
+  .banner1 {
+      width: 768px;
+  }
+  .banner2 {
+      width: 768px;
+  }
+  .banner1 img{
+      margin-left: 10px;
+      width: 700px;
+      height: 200px;
+  }
+  .left img{
+      width: 300px;
+      height: 350px;
+  }
+  .left1 img{
+    width: 360px;
+    height: 300px;
+}
+.rowposter1 .right1 img{
+    width: 300px;
+    height: 350px;
+}
+.rowposter2 .left2 img{
+    width: 300px;
+    height: 200px;
+}
+.footer hr{
+    width: 670px;
+}
+.points .shop{
+    margin-left: 50px;
+}
+.points .services{
+margin-left: 10px;
+}
+.points .store{
+    margin-left: 10px;}
+.points .buisness{
+    margin-left:8px;}
+}
+.points .values{
+    margin-left: 15px;
+}
+.footer .contact h4{
+    margin-left: 50px;
+    margin-right: 150px;
+}
+/* .footer .on{
+    visibility: hidden;
+} */
+.content h4{
+margin-left: 60px;
+/* margin-right: -180px; */
+}
+.content .india{
+    margin-right: 20px;
+}
+@media (max-width: 430px) {
+    nav{
+        width: 425px;
+    } 
+    #cart-icon{
+        font-size: 35px;
+        top: 10px;
+       }
+       #cart-icon2{
+        font-size: 35px;
+        top: 10px;
+        margin-left: 150px;
+       }
+    nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0,0,0,.8);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+	nav .links a {
+		font-size: 20px;
+        margin-left: 5px;
+        text-align: justify;
+        width: auto;
+	}
+    nav :checked~.links {
+        bottom: 0;
+    }
+
+    nav .icon-burger {
+        display: block;
+    }
+
+    nav :checked~.icon-burger .line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+    }
+
+    nav :checked~.icon-burger .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
+    }
+
+    nav :checked~.icon-burger .line:nth-child(2) {
+        opacity: 0;
+    }
+    .header{
+       top: 45px;
+        width: 427px;
+    }
+    .banner {
+        width: 425px;
+    }
+    .banner1 {
+        width: 425px;
+    }
+    .banner2 {
+        width: 425px;
+    }
+    .header h4{
+        font-size: 14px;
+    }
+    .banner1 img{
+        width: 400px;
+        margin-top: 40px;
+    }
+    .banner2 img{
+        width: 300px;
+        height: 250px;
+
+    }
+    .rowposter{
+        display: flex;
+        flex-direction: column;
+    }
+    .rowposter .left{
+        width: 425px;
+        margin-left: 0px;
+    }
+     .left img{
+         width: 425px;
+    
+     }
+     .rowposter .right{
+        width: 425px;
+        margin-left: 0px;
+    }
+    .rowposter1{
+        display: flex;
+        flex-direction: column;
+    }
+    .rowposter1 .left1{
+        width: 425px;
+        margin-left: 0px;
+    }
+    .rowposter1 .right1{
+        width: 425px;
+        margin-left: 0px;
+    }
+    .rowposter2{
+        display: flex;
+        flex-direction: column;
+    }
+    .rowposter2 .left2{
+        width: 425px;
+        margin-left: 0px;
+    }
+    .rowposter2 .right2{
+        width: 425px;
+        margin-left: 0px;
+    }
+    .footer hr{
+        width: 400px;
+        margin-left: 20px;
+    }
+    .points .shop{
+        margin-left: 20px;
+    }
+    .footer .contact h4{
+        margin-right: 5px;
+    }
+    /* .content div .p{
+        margin-left: -320px;
+    }
+    .content div .t{
+        margin-left: -320px;
+        margin-top: -2px;
+    }
+    .content div .s{
+        margin-left: -320px;
+        margin-top: -2px;
+    }
+    .content div .l{
+        margin-left: -300px;
+        margin-top: -2px;
+    }
+    .content div .si{
+        margin-left: -300px;
+        margin-top: -2px;
+    }
+    .content div .india{
+        margin-left: -300px;
+        margin-top: 5px;
+    }
+    .content div .vl{
+        flex-direction: column;
+        margin-left: -280px;
+        /* visibility: hidden; */
+    /* } */
+    .content div h4{
+       font-size: 16px;
+       margin-left: 50px;
+    }
+     .content div{
+        display: flex;
+        flex-direction: row;
+    }
+    /* .content div h4{
+        display: flex;
+        flex-direction: row;
+    } */
+    .content div h5{
+        display: flex;
+        flex-direction: row;
+    } 
+    .content div .p{
+        margin-left: 10px;
+    }
+    .content div .si{
+        margin-left: 10px;
+    }
+    .content .india{
+        margin-right: 4px;
+    }
+} 
+@media (max-width: 330px) {
+    nav{
+        width: 320px;
+    }
+    #cart-icon{
+        font-size: 35px;
+        top: 10px;
+       }
+       #cart-icon2{
+        font-size: 35px;
+        top: 10px;
+        margin-left: 100px;
+       }
+    nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(0,0,0,.8);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+	nav .links a {
+		font-size: 20px;
+        margin-left: 5px;
+        text-align: justify;
+        width: auto;
+	}
+    nav :checked~.links {
+        bottom: 0;
+    }
+
+    nav .icon-burger {
+        display: block;
+    }
+
+    nav :checked~.icon-burger .line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+    }
+
+    nav :checked~.icon-burger .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
+    }
+
+    nav :checked~.icon-burger .line:nth-child(2) {
+        opacity: 0;
+    }
+    .header{
+       top: 45px;
+        width: 320px;
+    }
+    .banner,.banner1 {
+        width: 320px;
+    }
+    .banner img{
+        margin-top:50px;
+        width: 300px;
+        height: 380px;
+    }
+    .banner1 img{
+        margin-top:50px;
+        width: 300px;
+        height: 380px;
+    }
+    .banner2 {
+        width: 320px;
+    }
+    .banner2 img{
+        margin-top:50px;
+        width: 250px;
+        height: 200px;
+    }
+    .rowposter .left{
+        width: 320px;
+    }
+    .left img{
+        width: 250px;
+    }
+    .rowposter .right{
+        width: 320px;
+    }
+    .left img{
+        width: 250px;
+    }
+    .rowposter1 .left1{
+        width: 320px;
+    }
+    .left1 img{
+        margin-top:90px;
+        width: 200px;
+        height: 200px;
+    }
+    .rowposter1 .right1
+    {
+        width: 320px;
+    }
+    .rowposter1 .right1 img{
+        height: 250px;
+    }
+    .rowposter2 .left2{
+        width: 320px;
+    }
+    .rowposter2 .left2 img{
+        height: 150px;
+    }
+    .rowposter2 .right2{
+        width: 320px;
+    }
+    .footer {
+        height: auto;
+    }
+    .footer hr{
+        width: 280px;
+    }
+    .points .shop,.services,.store,.buisness,.values
+    {
+        font-size: 10px;
+    }
+    .footer .contact h4{
+        margin-left: 10px;
+    }
+    .content div h4{
+        margin-left: 2px;
+    }
+    .content div .p,.t,.s,.l,.si,.india{
+        font-size: 8px;
+    }
+    .content .india{
+        margin-left: 10px;
+    }
+}
